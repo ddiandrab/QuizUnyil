@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aspire4739.quizunyil_pa.FragmentSoal">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_footer2" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/tulisan"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/tulisan" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Sisa Waktu : "
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="7dp"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Soal"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/soal"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/pic_btna"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/tulisan"
+        android:layout_alignLeft="@+id/tulisan"
+        android:layout_below="@+id/gambar"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="50dp"
+        android:text="Answer A"
+        android:textColor="#913446"
+        android:background="@color/colorGrey"
+        />
+
+    <Button
+        android:id="@+id/pic_btnb"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/pic_btna"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/pic_btna"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/pic_btna"
+        android:text="Answer B"
+        android:textColor="#913446"
+        android:background="@color/colorGrey"
+        />
+
+    <Button
+        android:id="@+id/pic_btnc"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/pic_btna"
+        android:layout_alignLeft="@+id/pic_btna"
+        android:layout_below="@+id/pic_btna"
+        android:layout_marginTop="7dp"
+        android:text="Answer C"
+        android:textColor="#913446"
+        android:background="@color/colorGrey"
+        />
+
+    <Button
+        android:id="@+id/pic_btnd"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/pic_btnb"
+        android:layout_alignStart="@+id/pic_btnb"
+        android:layout_alignTop="@+id/pic_btnc"
+        android:text="Answer D"
+        android:textColor="#913446"
+        android:background="@color/colorGrey"
+        />
+
+
+</RelativeLayout>

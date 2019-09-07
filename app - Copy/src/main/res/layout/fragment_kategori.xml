@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_footer2"
+    tools:context="com.example.aspire4739.quizunyil_pa.FragmentKategori">
+
+
+    <ImageView
+        android:id="@+id/header_kategori"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_kategori" />
+
+    <ImageView
+        android:id="@+id/kategori"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="360dp"
+        android:src="@drawable/ic_kategori" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@+id/header_kategori"
+        android:background="@null"
+        >
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

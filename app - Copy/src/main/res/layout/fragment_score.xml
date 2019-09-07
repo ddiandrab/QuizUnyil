@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aspire4739.quizunyil_pa.FragmentScore">
+
+    <ImageView
+        android:id="@+id/background_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_score2" />
+
+    <ImageView
+        android:id="@+id/pic_judul"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/tulisan_judul" />
+
+    <ImageView
+        android:id="@+id/logo_score"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/score_border" />
+
+    <ImageView
+        android:id="@+id/pic_btnbacktohome"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="105dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="41dp"
+        android:src="@drawable/btn_backtohome" />
+
+    <ImageView
+        android:id="@+id/pic_btnmain_lagi"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/pic_btnbacktohome"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/pic_btnbacktohome"
+        android:layout_toRightOf="@+id/pic_btnbacktohome"
+        android:src="@drawable/btnmain_lagi" />
+
+    <TextView
+        android:id="@+id/scoreTxt"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/pic_judul"
+        android:layout_alignStart="@+id/pic_judul"
+        android:layout_below="@+id/pic_judul"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="87dp"
+        android:text="100"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp" />
+
+</RelativeLayout>
